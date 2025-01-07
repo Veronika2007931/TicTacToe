@@ -1,0 +1,15 @@
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\net9.0\TicTacToe.exe
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\net9.0\TicTacToe.deps.json
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\net9.0\TicTacToe.runtimeconfig.json
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\net9.0\TicTacToe.dll
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\net9.0\TicTacToe.pdb
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.AssemblyInfoInputs.cache
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.AssemblyInfo.cs
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.csproj.CoreCompileInputs.cache
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.sourcelink.json
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.dll
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\refint\TicTacToe.dll
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.pdb
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.genruntimeconfig.cache
+D:\Users\Admin\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\net9.0\ref\TicTacToe.dll
