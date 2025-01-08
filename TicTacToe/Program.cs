@@ -1,5 +1,4 @@
-﻿using System;
-// Console.OutputEncoding = System.Text.Encoding.UTF8;
+﻿
 class TicTacToe
 {
     static char[,] board = {
@@ -24,12 +23,15 @@ class TicTacToe
 
                 PrintBoard();
                 Console.WriteLine("You win!");
+                NewGame();
                 break;
+
             }
             if (IsBoardFull())
             {
                 PrintBoard();
                 Console.WriteLine("draw!");
+                NewGame();
                 break;
             }
 
@@ -38,14 +40,46 @@ class TicTacToe
             {
                 PrintBoard();
                 Console.WriteLine("Computer win!");
+                NewGame();
                 break;
             }
             if (IsBoardFull())
             {
                 PrintBoard();
                 Console.WriteLine("draw!");
+                NewGame();
                 break;
             }
+        }
+    }
+
+    static void ResetBoard()
+    {
+        char[,] newBoard = {
+            { '1', '2', '3' },
+            { '4', '5', '6' },
+            { '7', '8', '9' }
+        };
+        Array.Copy(newBoard, board, newBoard.Length);
+        // метод який копіює з одного масиву в інший перший параметр це що копіюємо другий куди третій яку кількість 
+    }
+
+    static void NewGame()
+    {
+        Console.WriteLine("Start new game? (yes/no):");
+        string answ = Console.ReadLine();
+        if (answ.ToLower() == "yes")
+        {
+            ResetBoard();
+            Main();
+        }
+        else if (answ.ToLower() == "no")
+        {
+            Console.WriteLine("Thank you for the game");
+        }
+        else
+        {
+            Console.WriteLine("You entered something wrong");
         }
     }
 
@@ -101,7 +135,7 @@ class TicTacToe
                     break;
                 }
             }
-            Console.WriteLine("Incorect choose. Try another nomber.X");
+            Console.WriteLine("Incorect choose. Try another nomber.");
         }
     }
 
@@ -130,10 +164,19 @@ class TicTacToe
         {
             if ((board[i, 0] == symbol && board[i, 1] == symbol && board[i, 2] == symbol) ||
                 (board[0, i] == symbol && board[1, i] == symbol && board[2, i] == symbol))
+            {
                 return true;
+
+            }
+            else if ((board[0, 0] == symbol && board[1, 1] == symbol && board[2, 2] == symbol) ||
+                    (board[0, 2] == symbol && board[1, 1] == symbol && board[2, 0] == symbol))
+            {
+                return true;
+            }
         }
-        return (board[0, 0] == symbol && board[1, 1] == symbol && board[2, 2] == symbol) ||
-               (board[0, 2] == symbol && board[1, 1] == symbol && board[2, 0] == symbol);
+
+
+        return false;
     }
 
     static bool IsBoardFull()
